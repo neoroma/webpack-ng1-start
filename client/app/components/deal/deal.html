@@ -1,0 +1,15 @@
+<section class="wa-deal">
+    deal here,
+    {{deal.message}}
+    <div>
+        <span><input type="number" ng-model="deal.left"></span>
+        <span><input type="number" ng-model="deal.right"></span>
+        <button ng-disabled="!(deal.left && deal.right)" ng-click="deal.add(deal.left,deal.right)">
+            Add
+        </button>
+        <span><input type="number" ng-disabled="true" ng-model="deal.result"></span>
+    </div>
+
+    <pre>{{deal}}</pre>
+
+</section>
