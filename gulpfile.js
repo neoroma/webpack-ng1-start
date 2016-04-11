@@ -41,7 +41,7 @@ gulp.task('copy', function () {
 gulp.task('watch', function () {
   gulp.watch(paths.app, ['build', browser.reload])
   gulp.watch(paths.toCopy, ['copy', browser.reload])
-});
+})
 
 gulp.task('default', function (done) {
   sync('build', 'copy', 'serve', 'watch', done)
